@@ -49,17 +49,13 @@
         </div>
 
         <br>
-        <button id="verifyBtn" disabled onclick="startVerification()">Start Verification</button>
+        <button id="verifyBtn" disabled onclick="window.location.href='https://silver-chainsaw-xx65r5q9jvr29x7p-5000.app.github.dev/verify'">Start Verification</button>
     </div>
 
     <script>
         document.getElementById('agreeCheckbox').addEventListener('change', function() {
             document.getElementById('verifyBtn').disabled = !this.checked;
         });
-
-        function startVerification() {
-            window.location.href = "https://silver-chainsaw-xx65r5q9jvr29x7p-5000.app.github.dev/verify";
-        }
     </script>
 
 </body>
