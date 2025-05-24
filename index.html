@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roblox-Discord Verification</title>
+
+    <!-- Discord Embed Metadata -->
+    <meta property="og:title" content="Roblox-Discord Verification" />
+    <meta property="og:description" content="Start the secure verification process to link your Roblox account with Discord." />
+    <meta property="og:image" content="https://yourcdn.com/logo.png" />
+    <meta property="og:url" content="https://annoynumus9.github.io/APS_Webpage/" />
+    <meta name="theme-color" content="#007bff" />
+
+    <!-- Optional Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Roblox-Discord Verification" />
+    <meta name="twitter:description" content="Start the secure verification process to link your Roblox account with Discord." />
+    <meta name="twitter:image" content="https://yourcdn.com/logo.png" />
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,19 +55,22 @@
 
     <div class="container">
         <h2>Roblox-Discord Verification</h2>
-        <p>To proceed with verification, you must agree to our <a href="https://annoynumus9.github.io/APS_Webpage/tos" target="_blank">Terms of Service</a> and <a href="https://annoynumus9.github.io/APS_Webpage/Privacy" target="_blank">Privacy Policy</a>.</p>
+        <p>To proceed with verification, you must agree to our 
+            <a href="https://annoynumus9.github.io/APS_Webpage/tos" target="_blank">Terms of Service</a> and 
+            <a href="https://annoynumus9.github.io/APS_Webpage/Privacy" target="_blank">Privacy Policy</a>.
+        </p>
         
         <div class="tos-container">
-            <input type="checkbox" id="agreeCheckbox">
-            <label for="agreeCheckbox">I agree that I read and agree the Terms of Service and Privacy Policy.</label>
+            <input type="checkbox" id="agreeCheckbox" />
+            <label for="agreeCheckbox">I agree that I read and agree to the Terms of Service and Privacy Policy.</label>
         </div>
 
-        <br>
+        <br />
         <button id="verifyBtn" disabled onclick="window.location.href='https://auroraplasmasystems.up.railway.app/verify'">Start Verification</button>
     </div>
 
     <script>
-        document.getElementById('agreeCheckbox').addEventListener('change', function() {
+        document.getElementById('agreeCheckbox').addEventListener('change', function () {
             document.getElementById('verifyBtn').disabled = !this.checked;
         });
     </script>
